@@ -13,6 +13,13 @@ $ npm start
 
 Your app should now be running on [localhost:5000](http://localhost:5000/).
 
+## Deploy to heroku
+* Follow the instructions in [heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
+
+```sh
+$ git push heroku master
+```
+
 ## Resources
 
 * [Google docs form](https://docs.google.com/forms/d/1K-8Zz1ozFIdfvGiYv3bcHBT52CDDswxlhwmpitsYdOI)

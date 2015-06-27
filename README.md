@@ -13,6 +13,10 @@ $ npm start
 
 Your app should now be running on [localhost:5000](http://localhost:5000/).
 
-## Google docs
+## Resources
 
-[Google docs form](https://docs.google.com/forms/d/1K-8Zz1ozFIdfvGiYv3bcHBT52CDDswxlhwmpitsYdOI)
+* [Google docs form](https://docs.google.com/forms/d/1K-8Zz1ozFIdfvGiYv3bcHBT52CDDswxlhwmpitsYdOI)
+* [Form responses](https://docs.google.com/spreadsheets/d/1p1gNxQy71ww7OsHf8uDYCw0vPYMcykxTep0KR4z3-z0)
+
+* [Heroku configuration](https://dashboard.heroku.com/apps/kado-mvp/resources)
+* [Heroku deployment](http://mvp.hoozad.com/)

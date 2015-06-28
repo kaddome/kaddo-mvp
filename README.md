@@ -7,8 +7,8 @@ A barebones Node.js app using [Express 4](http://expressjs.com/).
 Make sure you have [Node.js](http://nodejs.org/)installed.
 
 ```sh
-$ npm install
-$ npm start
+kado-mvp$ npm install
+kado-mvp$ npm start
 ```
 
 Your app should now be running on [localhost:5000](http://localhost:5000/).
@@ -17,7 +17,7 @@ Your app should now be running on [localhost:5000](http://localhost:5000/).
 * Follow the instructions in [heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
 
 ```sh
-$ git push heroku master
+kado-mvp$ git push heroku master
 ```
 
 ## Resources

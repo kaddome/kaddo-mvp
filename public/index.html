@@ -14,16 +14,24 @@
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     
-      ga('create', 'UA-64577305-1', 'auto');
-      ga('send', 'pageview');
-    
+      ga('create', 'UA-64577305-1', {
+        'cookieDomain': 'none'
+      });
+          
     </script>
 </head>
 
 <body>
+
 <div class="container">
     <h1 class="text">kado address</h1>
     
+    <script>
+    	 $("input").change(function(){
+			 console.log("Entering loaded.");
+		  });
+    </script
+
     <div id="big-form" class="well auth-box">
         <form role="form"
               action="https://docs.google.com/forms/d/1K-8Zz1ozFIdfvGiYv3bcHBT52CDDswxlhwmpitsYdOI/formResponse"
@@ -31,7 +39,7 @@
             <fieldset>
                 <div class="form-group">
                     <label for="entry.1721080211">First name</label>
-                    <input type="text" class="form-control" placeholder="John" id="entry.1721080211" name="entry.1721080211">
+                    <input type="text" class="form-control" placeholder="John" id="entry.1721080211" name="entry.1721080211">                    
                 </div>
                 <div class="form-group">
                     <label for="entry.548265541">Surname</label>

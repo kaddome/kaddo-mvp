@@ -17,6 +17,11 @@
       ga('create', 'UA-64577305-1', {
         'cookieDomain': 'none'
       });
+
+      ga('send', 'pageview', {
+      	page: 'Delivery Details Form - LOCALHOST - TESTING',
+      	title: 'Delivery Details Form Page'
+      });            
           
     </script>
 </head>
@@ -24,13 +29,7 @@
 <body>
 
 <div class="container">
-    <h1 class="text">kado address</h1>
-    
-    <script>
-    	 $("input").change(function(){
-			 console.log("Entering loaded.");
-		  });
-    </script
+    <h1 class="text">kado address</h1>   
 
     <div id="big-form" class="well auth-box">
         <form role="form"
@@ -65,5 +64,57 @@
 
 <div class="clearfix"></div>
 </body>
+
+<!-- Send google analytics events -->
+<script>
+	var firstName = "#entry\\.1721080211";
+	var surname = "#entry\\.548265541";
+	var propertyNumberAndAddress = "#entry\\.1091746689";
+	var town = "#entry\\.15437857";
+	var postcode = "#entry\\.1075178930";
+
+	function logItForMe(loggable) {
+		console.log(loggable);
+	}
+
+	function reportEventToGA(eventAction, eventLabel){
+		ga('send', 
+			   	'event', 
+			   	'DeliveryDetailsForm7', 
+			   	eventAction, 
+			   	eventLabel, {
+				page: 'Delivery Details Form - LOCALHOST - TESTING'
+		});
+	}
+
+	$("document").ready(function(){
+		
+		$(firstName).change(function(){
+			reportEventToGA('firstNameEntered', 'user has entered the firstName field')
+		});		
+
+		$(surname).change(function(){
+			reportEventToGA('surnameEntered', 'user has entered the surname field')			
+		});
+
+		$(town).change(function(){
+			reportEventToGA('townEntered', 'user has entered the town field')			
+		});
+
+		$(propertyNumberAndAddress).change(function(){
+			reportEventToGA('propertyNumberAndAddressEntered', 'user has entered the property number and address field')			
+		});
+
+		$(postcode).change(function(){
+			reportEventToGA('postcodeEntered', 'user has entered the postcode field')
+		});
+
+		$(".btn.btn-primary").click(function(){
+			reportEventToGA('deliveryDetailsFormSubmitted', 'user has submitted the DD form')
+		});
+
+	});	
+
+</script>
 
 </html>

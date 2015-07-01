@@ -25,9 +25,9 @@
     <h1 class="text">kado address</h1>
     
     <div id="big-form" class="well auth-box">
-        <form role="form"
+        <form role="form" name="deliveryDetails" 
               action="https://docs.google.com/forms/d/1K-8Zz1ozFIdfvGiYv3bcHBT52CDDswxlhwmpitsYdOI/formResponse"
-              method="POST" id="ss-form" target="_self" onsubmit="">
+              method="POST" id="ss-form">
             <fieldset>
                 <div class="form-group">
                     <label for="entry.1721080211">First name</label>
@@ -49,13 +49,29 @@
                     <label for="entry.1721080211">Postcode</label>
                     <input type="text" class="form-control" placeholder="NW1 6XE" id="entry.1075178930" name="entry.1075178930">
                 </div>
+                
+                <!-- Facebook user id -->
+                <input type="hidden" id="entry.1926467036" name="entry.1926467036">
+                
                 <button type="submit" class="btn btn-primary">Submit</button>
             </fieldset>
         </form>
     </div>
+
+    <div class="panel panel-success hidden" id="thanks">
+        <div class="panel-heading">
+            <h3 class="panel-title">Thanks!</h3>
+        </div>
+        <div class="panel-body">
+            Qui blandit suscipit ocurreret ex, et vel brute illud conceptam. Eu his consul malorum pericula, cu adipisci signiferumque nec, vel habeo officiis fabellas in
+        </div>
+    </div>
+    
 </div>
 
 <div class="clearfix"></div>
 </body>
 
+
+<script src="assets/js/kado.js"></script>
 </html>

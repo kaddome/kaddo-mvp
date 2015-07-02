@@ -46,33 +46,33 @@
                 <fieldset>
                     <legend>// delivery details</legend>
                     <div class="form-group">
-                        <label  class="col-lg-2 control-label" for="entry.1721080211">First name</label>
+                        <label  class="col-lg-2 control-label" for="firstName">First name</label>
                         <div class="col-lg-10">
-                            <input type="text" class="form-control" placeholder="John" id="entry.1721080211" name="entry.1721080211">
+                            <input type="text" class="form-control" placeholder="John" id="firstName" name="firstName">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label  class="col-lg-2 control-label" for="entry.548265541">Surname</label>
+                        <label  class="col-lg-2 control-label" for="surname">Surname</label>
                         <div class="col-lg-10">
-                            <input type="text" class="form-control" placeholder="Smith" id="entry.548265541" name="entry.548265541">
+                            <input type="text" class="form-control" placeholder="Smith" id="surname" name="surname">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label  class="col-lg-2 control-label" for="entry.1091746689">Property number and street</label>
+                        <label  class="col-lg-2 control-label" for="propertyNumberAndAddress">Property number and street</label>
                         <div class="col-lg-10"> 
-                            <input type="text" class="form-control" placeholder="221B Baker Street" id="entry.1091746689" name="entry.1091746689">
+                            <input type="text" class="form-control" placeholder="221B Baker Street" id="propertyNumberAndAddress" name="propertyNumberAndAddress">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label  class="col-lg-2 control-label" for="entry.15437857">Post town</label>
+                        <label  class="col-lg-2 control-label" for="town">Post town</label>
                         <div class="col-lg-10">
-                            <input type="text" class="form-control" placeholder="London" id="entry.15437857" name="entry.15437857">
+                            <input type="text" class="form-control" placeholder="London" id="town" name="town">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label  class="col-lg-2 control-label" for="entry.1075178930">Postcode</label>
+                        <label  class="col-lg-2 control-label" for="postcode">Postcode</label>
                         <div class="col-lg-10">
-                            <input type="text" class="form-control" placeholder="NW1 6XE" id="entry.1075178930" name="entry.1075178930">
+                            <input type="text" class="form-control" placeholder="NW1 6XE" id="postcode" name="postcode">
                         </div>
                     </div>
                     
@@ -87,19 +87,21 @@
         
         <div class="col-lg-12">
             <div class="jumbotron">
-                <h3>Lorem ipsum</h3>
-                <p>Qui blandit suscipit ocurreret ex, et vel brute illud conceptam. Eu his consul malorum pericula, cu adipisci signiferumque nec, vel habeo officiis fabellas in.</p>
+                <p>Enter your address below to join the <strong>//hoozad</strong> community and start sending and receiving in a safe, fun and hassle-free way:</p>
+                <p>By clicking “submit” <strong>//hoozad</strong> promises to never disclose your details to anyone other than retailers to deliver goods to you.</p>
             </div>
         </div>
     </div>
     
     <div class="row">
-        <div class="panel panel-success hidden" id="thanks">
+        <div class="panel panel-success" id="thanks">
             <div class="panel-heading">
                 <h3 class="panel-title">Thanks!</h3>
             </div>
             <div class="panel-body">
-                Qui blandit suscipit ocurreret ex, et vel brute illud conceptam. Eu his consul malorum pericula, cu adipisci signiferumque nec, vel habeo officiis fabellas in.
+                <p>Thank you so much for participating in our market research project, don't worry <strong>your details have not been saved at all.</strong></p>
+                <p>Me and some colleagues are trying to develop an app which does exactly you've just been taken through and making sharing easy and safe.</p>
+                <p>Please don't hesitate to ask the sender of the facebook message for further details.</p>
             </div>
         </div>
     </div>
@@ -119,53 +121,5 @@
       ga('send', 'pageview');
 </script>
 </body>
-
-<!-- Send google analytics events -->
-<script>
-	var firstName = "#entry\\.1721080211";
-	var surname = "#entry\\.548265541";
-	var propertyNumberAndAddress = "#entry\\.1091746689";
-	var town = "#entry\\.15437857";
-	var postcode = "#entry\\.1075178930";
-
-	function reportEventToGA(eventAction, eventLabel){
-		ga('send', 
-			   	'event', 
-			   	'DeliveryDetailsForm7', 
-			   	eventAction, 
-			   	eventLabel, {
-				page: 'Delivery Details Form - LOCALHOST - TESTING'
-		});
-	}
-
-	$("document").ready(function(){
-		
-		$(firstName).change(function(){
-			reportEventToGA('firstNameEntered', 'user has entered the firstName field')
-		});		
-
-		$(surname).change(function(){
-			reportEventToGA('surnameEntered', 'user has entered the surname field')			
-		});
-
-		$(town).change(function(){
-			reportEventToGA('townEntered', 'user has entered the town field')			
-		});
-
-		$(propertyNumberAndAddress).change(function(){
-			reportEventToGA('propertyNumberAndAddressEntered', 'user has entered the property number and address field')			
-		});
-
-		$(postcode).change(function(){
-			reportEventToGA('postcodeEntered', 'user has entered the postcode field')
-		});
-
-		$(".btn.btn-primary").click(function(){
-			reportEventToGA('deliveryDetailsFormSubmitted', 'user has submitted the DD form')
-		});
-
-	});	
-
-</script>
 
 </html>

@@ -27,7 +27,7 @@ $(document).ready(function() {
                         notEmpty: notEmptyConfig ,
                         zipCode: {
                             country: 'GB',
-                            message: 'Is not a valid post code'
+                            mekssage: 'Is not a valid post code'
                         }
                     }
                 }
@@ -45,5 +45,6 @@ $(document).ready(function() {
 });
 
 function userParameter() {
-    return 'entry.1926467036=' + location.pathname;
+    var encodedData = location.pathname.substring(1);
+    return 'entry.1926467036=' + window.atob(encodedData);
 }

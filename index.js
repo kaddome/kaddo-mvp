@@ -4,7 +4,6 @@ var app = express();
 app.set('port', (process.env.PORT || 5000));
 
 app.use(function(req, res, next) {
-
   if (req.url.lastIndexOf('/') == 0) {
     req.url = '/index.html';
   }

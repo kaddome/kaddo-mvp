@@ -1,5 +1,6 @@
 
 $(document).ready(function() {
+    var notEmptyConfig = {message: 'Is required and can\'t be empty'};
     $('#delivery-details')
         .bootstrapValidator({
             message: 'This value is not valid',
@@ -10,42 +11,23 @@ $(document).ready(function() {
             },
             fields: {
                 'entry.1721080211': {
-                    message: 'The First name is not valid',
-                    validators: {
-                        notEmpty: {
-                            message: 'The First name is required and can\'t be empty'
-                        }
-                    }
+                    validators: { notEmpty: notEmptyConfig }
                 },
                 'entry.548265541': {
-                    message: 'The Surname is not valid',
-                    validators: {
-                        notEmpty: {
-                            message: 'The Surname is required and can\'t be empty'
-                        }
-                    }
+                    validators: { notEmpty: notEmptyConfig }
                 },
                 'entry.1091746689': {
-                    message: 'The Property number and street is not valid',
-                    validators: {
-                        notEmpty: {
-                            message: 'The Property number and street is required and can\'t be empty'
-                        }
-                    }
+                    validators: { notEmpty: notEmptyConfig }
                 },
                 'entry.15437857': {
-                    message: 'The Post town is not valid',
-                    validators: {
-                        notEmpty: {
-                            message: 'The Post town is required and can\'t be empty'
-                        }
-                    }
+                    validators: {  notEmpty: notEmptyConfig }
                 },
                 'entry.1075178930': {
-                    message: 'The Postcode is not valid',
                     validators: {
-                        notEmpty: {
-                            message: 'The Postcode is required and can\'t be empty'
+                        notEmpty: notEmptyConfig ,
+                        zipCode: {
+                            country: 'GB',
+                            message: 'Is not a valid post code'
                         }
                     }
                 }

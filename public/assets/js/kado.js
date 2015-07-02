@@ -38,13 +38,19 @@ $(document).ready(function() {
             var $form = $(e.target);
             var bv = $form.data('bootstrapValidator');
                     
-            $.post($(this).attr('action'), $(this).serialize() + '&' + userParameter());
+            $.post($(this).attr('action'), $(this).serialize() + '&' + userParameters());
             $('#form-container').hide();
             $("#thanks").removeClass('hidden');
         });
 });
 
-function userParameter() {
-    var encodedData = location.pathname.substring(1);
-    return 'entry.1926467036=' + window.atob(encodedData);
+function userParameters() {
+    var data = window.atob(location.pathname.substring(1));
+    var parameters = data.split(',');
+    
+    var userParameters =  'entry.1926467036=' + parameters[0];
+    if(parameters.length > 1){
+        userParameters = userParameters + '&entry.1904787477=' + parameters[1];
+    }
+    return userParameters;
 }

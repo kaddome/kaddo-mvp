@@ -23,7 +23,7 @@ kado-mvp$ git push heroku master
 ## Resources
 
 * [Google docs form](https://docs.google.com/forms/d/1K-8Zz1ozFIdfvGiYv3bcHBT52CDDswxlhwmpitsYdOI)
-* [Form responses](https://docs.google.com/spreadsheets/d/1p1gNxQy71ww7OsHf8uDYCw0vPYMcykxTep0KR4z3-z0)
+* [Form responses](https://docs.google.com/spreadsheets/d/1IRmbuaeiOwHjo1IBFPMmYxz8OxiWEG0jyeVJ7VgAzbQ)
 
 * [Heroku configuration](https://dashboard.heroku.com/apps/kado-mvp/resources)
 * [Heroku deployment](http://mvp.hoozad.com/)

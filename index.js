@@ -22,8 +22,6 @@ app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
 
-
-
 app.post('/contact', function (req, res) {
     var smtpTransport = nodemailer.createTransport({
         service: 'gmail',
